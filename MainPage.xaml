@@ -14,19 +14,121 @@
 
         <Style TargetType="Label">
             <Setter Property="Margin" Value="0, 4" />
-            
+
+        </Style>
+        <Style x:Key="headerLabel1" TargetType="Label">
+            <Setter Property="Margin" Value="0, 5" />
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="#182C61"/>
         </Style>
 
-        <Style x:Key="headerlabel" TargetType="Label" >
-            <Setter Property="Margin" Value="0, 8" />
-            <Setter Property="FontSize" Value="Large" />
-            <Setter Property="TextColor" Value="#182C61" />
-        </Style>
+                <Style TargetType="Image">
+                    <Setter Property="FlexLayout.Order" Value="-1"/>
+                    <Setter Property="FlexLayout.AlignSelf" Value="Center"/>
+                </Style>
 
-        <Style TargetType="Image">
-            <Setter Property="FlexLayout.Order" Value="-1"/>
-            <Setter Property="FlexLayout.AlignSelf" Value="Center"/>
-        </Style>    
+
+                <Style TargetType="Button">
+                    <Setter Property="Text" Value="Comprar"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="BackgroundColor" Value="#78A64B"/>
+                    <Setter Property="BorderRadius" Value="20"/>
+                </Style>
+
+                
     </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame BorderColor="Orange"
+               CornerRadius="10"
+               HasShadow="True"
+               BackgroundColor="#68585D">
+            <Label Text="Nuestros Mejores Tacos" FontSize="26" TextColor="White" HorizontalTextAlignment="Center" />
+        </Frame>
+
+        <ScrollView Orientation="Both">
+            <FlexLayout>
+                <Frame WidthRequest="340"
+                       HeightRequest="600">
+
+                    <FlexLayout Direction="Column">
+                        <Label Text="Tacos de Carne" HorizontalTextAlignment="Center" FontSize="35"
+                               Style="{StaticResource headerLabel1}"/>
+                        <Label Text="Los tacos de carne en la enredada representan el sabor mexicano tradicional con su toque de cebolla fresca tomate y guacamole" />
+                        <Label Text="   &#x2022; Tacos de Carne: Tortilla dura, cebolla, culantro" FontFamily="25"/>
+                        <Label Text="   &#x2022; Pidelos con Guacamole y sin guacamole" FontFamily="25"/>
+                        <Label Text="   &#x2022; Acompaniados con salsas tradicionales de la casa hechas con jalapenios" FontFamily="25"/>
+                        <Image Source="tacosdecarne.jpg" 
+                              WidthRequest="280"
+                              HeightRequest="200"/>
+
+                        <Label FlexLayout.Grow="1" />
+                        <Button x:Name="btnComprar" Clicked="btnComprar_Clicked" />
+                    </FlexLayout>
+                </Frame>
+
+                <Frame WidthRequest="340"
+       HeightRequest="600">
+
+                    <FlexLayout Direction="Column">
+                        <Label Text="Tacos de Carne" HorizontalTextAlignment="Center" FontSize="35"
+               Style="{StaticResource headerLabel1}"/>
+                        <Label Text="Los tacos de birria de la enredada vienen con el mejor consome realizado con chiles de arbol 100% organicos" />
+                        <Label Text="   &#x2022; Tacos de Birria: Tortilla suave, cebolla, culantro" FontFamily="25"/>
+                        <Label Text="   &#x2022; Pidelos con Guacamole y sin guacamole" FontFamily="25"/>
+                        <Label Text="   &#x2022; Acompaniados con salsas tradicionales de la casa hechas con jalapenios" FontFamily="25"/>
+                        <Image Source="tacosdebirria.jpg"
+                               WidthRequest="280"
+                               HeightRequest="200"/>
+
+                        <Label FlexLayout.Grow="1" />
+                        <Button x:Name="btnComprar1" Clicked="btnComprar1_Clicked" />
+                    </FlexLayout>
+                </Frame>
+
+                <Frame WidthRequest="340"
+       HeightRequest="600">
+
+                    <FlexLayout Direction="Column">
+                        <Label Text="Tacos de Carne" HorizontalTextAlignment="Center" FontSize="35"
+               Style="{StaticResource headerLabel1}"/>
+                        <Label Text="Los tacos de carne en la enredada representan el sabor mexicano tradicional con su toque de cebolla fresca tomate y guacamole" />
+                        <Label Text="   &#x2022; Tacos de Pollo: Tortilla dura, cebolla, culantro" FontFamily="25"/>
+                        <Label Text="   &#x2022; Pidelos con Guacamole y sin guacamole" FontFamily="25"/>
+                        <Label Text="   &#x2022; Acompaniados con salsas tradicionales de la casa hechas con jalapenios" FontFamily="25"/>
+                        <Image Source="tacosdepollo.jpg" 
+                                WidthRequest="280"
+                                HeightRequest="200"/>
+                        
+                        <Label FlexLayout.Grow="1" />
+                        <Button x:Name="btnComprar2" Clicked="btnComprar2_Clicked" />
+                    </FlexLayout>
+                </Frame>
+
+
+                <Frame WidthRequest="340"
+       HeightRequest="600">
+
+                    <FlexLayout Direction="Column">
+                        <Label Text="Tacos de Carne" HorizontalTextAlignment="Center" FontSize="35"
+               Style="{StaticResource headerLabel1}"/>
+                        <Label Text="Arma tu taco con los ingredientes disponibles y nosotros lo tendremos para ti con la mejor sazon 100% mexicana" />
+                        <Label Text="   &#x2022; Tacos de Carne: Tortilla dura, cebolla, culantro" FontFamily="25"/>
+                        <Label Text="   &#x2022; Pidelos con Guacamole y sin guacamole" FontFamily="25"/>
+                        <Label Text="   &#x2022; Acompaniados con salsas tradicionales de la casa hechas con jalapenios" FontFamily="25"/>
+                        <Image Source="tacos.jpg"
+                               WidthRequest="280"
+                               HeightRequest="200"/>
+
+                        <Label FlexLayout.Grow="1" />
+                        <Button x:Name="btnComprar3" Clicked="btnComprar_Clicked3" />
+                    </FlexLayout>
+                </Frame>
+            </FlexLayout>
+        </ScrollView>
+    </StackLayout>
+
+
 
 </ContentPage>
