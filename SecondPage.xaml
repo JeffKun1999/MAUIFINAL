@@ -19,7 +19,8 @@
         <Style x:Key="headerLabel1" TargetType="Label">
             <Setter Property="Margin" Value="0, 5" />
             <Setter Property="FontSize" Value="Large"/>
-            <Setter Property="TextColor" Value="#182C61"/>
+            
+			<Setter Property="TextColor" Value="#182C61"/>
         </Style>
 
         <Style TargetType="Image">
