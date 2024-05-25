@@ -33,7 +33,7 @@
                     <Setter Property="FontSize" Value="Large"/>
                     <Setter Property="TextColor" Value="White"/>
                     <Setter Property="BackgroundColor" Value="#78A64B"/>
-                    <Setter Property="BorderRadius" Value="20"/>
+                    <Setter Property="CornerRadius" Value="20"/>
                 </Style>
 
                 
@@ -64,7 +64,7 @@
                               HeightRequest="200"/>
 
                         <Label FlexLayout.Grow="1" />
-                        <Button x:Name="btnComprar" Clicked="btnComprar_Clicked" />
+                        <Button x:Name="btnComprar"  Clicked="OnBtnComprar1Clicked"/>
                     </FlexLayout>
                 </Frame>
 
@@ -83,7 +83,7 @@
                                HeightRequest="200"/>
 
                         <Label FlexLayout.Grow="1" />
-                        <Button x:Name="btnComprar1" Clicked="btnComprar1_Clicked" />
+                        <Button x:Name="btnComprar1" Clicked="OnBtnComprar1Clicked" />
                     </FlexLayout>
                 </Frame>
 
@@ -102,7 +102,7 @@
                                 HeightRequest="200"/>
                         
                         <Label FlexLayout.Grow="1" />
-                        <Button x:Name="btnComprar2" Clicked="btnComprar2_Clicked" />
+                        <Button x:Name="btnComprar2" Clicked="OnBtnComprar1Clicked" />
                     </FlexLayout>
                 </Frame>
 
@@ -122,7 +122,7 @@
                                HeightRequest="200"/>
 
                         <Label FlexLayout.Grow="1" />
-                        <Button x:Name="btnComprar3" Clicked="btnComprar_Clicked3" />
+                        <Button x:Name="btnComprar3" Clicked="OnBtnComprar1Clicked" />
                     </FlexLayout>
                 </Frame>
             </FlexLayout>
