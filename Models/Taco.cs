@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MJSCJR_TacoslaEnredadaInterfaz.Models
 {
-    public class taco
+    public class Taco
     {
         public int idTaco { get; set; }
         public string? nombreTaco { get; set; }
