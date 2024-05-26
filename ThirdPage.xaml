@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MJSCJR_TacoslaEnredadaInterfaz.ThirdPage"
+             Title="ThirdPage">
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#68585D"/>
+            <Setter Property="BorderColor" Value="#78A64B"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="15"/>
+
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0, 4" />
+
+        </Style>
+        <Style x:Key="headerLabel1" TargetType="Label">
+            <Setter Property="Margin" Value="0, 5" />
+            <Setter Property="FontSize" Value="Large"/>
+
+            <Setter Property="TextColor" Value="#182C61"/>
+        </Style>
+
+        <Style TargetType="Image">
+            <Setter Property="FlexLayout.Order" Value="-1"/>
+            <Setter Property="FlexLayout.AlignSelf" Value="Center"/>
+        </Style>
+
+
+        <Style TargetType="Button">
+            <Setter Property="Text" Value="Comprar"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#78A64B"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+
+    </ContentPage.Resources>
+    <StackLayout Padding="10">
+        <Frame BackgroundColor="#4F4B4B" Padding="10" CornerRadius="10">
+            <StackLayout>
+                <Label Text="Tu actual orden es la siguiente:" FontSize="26" TextColor="White" HorizontalTextAlignment="Center"/>
+                <Image Source="cart_icon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+                <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0,10"/>
+                <Label Text="Tu orden es la siguiente:" FontSize="20" TextColor="White"/>
+
+                <!-- Primera orden -->
+                <StackLayout Orientation="Horizontal" Margin="0,10">
+                    <Image Source="tacosdecarne.jpg" WidthRequest="100" HeightRequest="80"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                        <Label Text="Tacos de Carne $5" FontSize="16" TextColor="White"/>
+                        <Label Text="Combo con 2 tacos con la mejor selección de carne adobada en nuestra casa con sazón 100% Mexicana" FontSize="14" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center">
+                        <Button Text="+" WidthRequest="30" HeightRequest="30" BackgroundColor="#78A64B"/>
+                        <Button Text="-" WidthRequest="30" HeightRequest="30" BackgroundColor="#78A64B"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Segunda orden (puedes duplicar esto para más items) -->
+                <StackLayout Orientation="Horizontal" Margin="0,10">
+                    <Image Source="tacosdecarne.jpg" WidthRequest="100" HeightRequest="80"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                        <Label Text="Tacos de Carne $5" FontSize="16" TextColor="White"/>
+                        <Label Text="Combo con 2 tacos con la mejor selección de carne adobada en nuestra casa con sazón 100% Mexicana" FontSize="14" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center">
+                        <Button Text="+" WidthRequest="30" HeightRequest="30" BackgroundColor="#78A64B"/>
+                        <Button Text="-" WidthRequest="30" HeightRequest="30" BackgroundColor="#78A64B"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0,10"/>
+                <Label Text="Una vez realizada la orden acércate al local a cancelar el pedido" FontSize="16" TextColor="White" HorizontalTextAlignment="Center"/>
+                <Button x:Name="btnEnviarOrden" />
+            </StackLayout>
+        </Frame>
+        <Button x:Name="btnRegresarHome" Text="Regresar" Clicked="OnBtnRegresarHome" />
+    </StackLayout>
+</ContentPage>
