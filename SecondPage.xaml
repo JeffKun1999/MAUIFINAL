@@ -66,7 +66,7 @@ WidthRequest="280"
 HeightRequest="200"/>
 				<Label Text="Seleccion de los mejores tacos de carne de la ciudad con su sazon 100% mexicana pidelos ahora" />
 				<Button x:Name="btnComprarCarrito"  />
-				<Label Text="Presiona el boton de 'Comprar' para dirigirte al carrito de compra" />
+				<Label Text="Presiona  el boton de 'Comprar' para dirigirte al carrito de compra" />
 			</StackLayout>
 
 		</Frame>
