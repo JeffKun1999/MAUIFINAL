@@ -11,4 +11,8 @@ public partial class ThirdPage : ContentPage
     {
         await Navigation.PushAsync(new MainPage());
     }
+    private async void OnBtnRegresarSP(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SecondPage());
+    }
 }

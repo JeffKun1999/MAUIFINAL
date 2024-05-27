@@ -74,9 +74,9 @@
 
                 <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0,10"/>
                 <Label Text="Una vez realizada la orden acércate al local a cancelar el pedido" FontSize="16" TextColor="White" HorizontalTextAlignment="Center"/>
-                <Button x:Name="btnEnviarOrden" />
+                <Button x:Name="btnEnviarOrden" Clicked="OnBtnRegresarHome"/>
             </StackLayout>
         </Frame>
-        <Button x:Name="btnRegresarHome" Text="Regresar" Clicked="OnBtnRegresarHome" />
+        <Button x:Name="btnRegresarSP" Text="Regresar" Clicked="OnBtnRegresarSP"/>
     </StackLayout>
 </ContentPage>
