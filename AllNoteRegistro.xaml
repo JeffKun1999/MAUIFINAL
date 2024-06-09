@@ -7,17 +7,18 @@
         <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}" />
     </ContentPage.ToolbarItems>
 
-    <CollectionView x:Name="notesCollection"
+    <CollectionView x:Name="notesCollection" 
                     ItemsSource="{Binding Notes}"
-                    Margin="20"
+                    BackgroundColor="#68585D"
                     SelectionMode="Single"
-                    SelectionChanged="notesCollection_SelectionChanged">
+                    SelectionChanged="notesCollection_SelectionChanged"
+                    >
         <CollectionView.ItemsLayout>
             <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
         </CollectionView.ItemsLayout>
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <StackLayout>
+                <StackLayout Margin="20" >
                     <Label Text="{Binding Text}" FontSize="22"/>
                     <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
                 </StackLayout>

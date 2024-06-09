@@ -9,25 +9,22 @@
             <Setter Property="BorderColor" Value="#78A64B"/>
             <Setter Property="Margin" Value="10"/>
             <Setter Property="CornerRadius" Value="15"/>
-
         </Style>
 
         <Style TargetType="Label">
             <Setter Property="Margin" Value="0, 4" />
-
         </Style>
+
         <Style x:Key="headerLabel1" TargetType="Label">
             <Setter Property="Margin" Value="0, 5" />
             <Setter Property="FontSize" Value="Large"/>
-            
-			<Setter Property="TextColor" Value="#182C61"/>
+            <Setter Property="TextColor" Value="#182C61"/>
         </Style>
 
         <Style TargetType="Image">
             <Setter Property="FlexLayout.Order" Value="-1"/>
             <Setter Property="FlexLayout.AlignSelf" Value="Center"/>
         </Style>
-
 
         <Style TargetType="Button">
             <Setter Property="Text" Value="Comprar"/>
@@ -36,41 +33,29 @@
             <Setter Property="BackgroundColor" Value="#78A64B"/>
             <Setter Property="CornerRadius" Value="20"/>
         </Style>
-
-
-
     </ContentPage.Resources>
-    <StackLayout>
-       
+
+    <StackLayout BackgroundColor="#78A64B">
         <Frame BorderColor="Orange"
- CornerRadius="10"
- HasShadow="True"
- BackgroundColor="#68585D">
-			<StackLayout>
-				<Image Source="logo.jpg"
-WidthRequest="139"
-HeightRequest="149"/>
-            <Label Text="Producto Seleccionado" FontSize="26" TextColor="White" HorizontalTextAlignment="Center" />
-			
-			</StackLayout>
-
-		</Frame>
-		<Frame BorderColor="Orange"
-CornerRadius="10"
-HasShadow="True"
-BackgroundColor="#68585D">
-			<StackLayout>
-				<Label Text="Taco de Birria" FontSize="26" TextColor="White" HorizontalTextAlignment="Center" />
-				<Image Source="tacosdebirria.jpg"
-WidthRequest="280"
-HeightRequest="200"/>
-				<Label Text="Seleccion de los mejores tacos de carne de la ciudad con su sazon 100% mexicana pidelos ahora" />
+               CornerRadius="10"
+               HasShadow="True"
+               BackgroundColor="#68585D">
+            <StackLayout>
+                <Image Source="logo.jpg"
+                       WidthRequest="139"
+                       HeightRequest="149"/>
+                <Label Text="Producto Seleccionado" FontSize="26" TextColor="White" HorizontalTextAlignment="Center" />
+                <Label Text="Taco de Birria" FontSize="26" TextColor="White" HorizontalTextAlignment="Center" />
+                <Image Source="tacosdebirria.jpg"
+                       WidthRequest="280"
+                       HeightRequest="200"/>
+                <Label Text="Selección de los mejores tacos de carne de la ciudad con su sazón 100% mexicana. Pídelos ahora." />
                 <Button x:Name="btnComprarCarrito" Text="Comprar" Clicked="OnBtnComprarCarrito" />
-				<Label Text="Presiona  el boton de 'Comprar' para dirigirte al carrito de compra" />
-			</StackLayout>
+                <Label Text="Presiona el botón de 'Comprar' para dirigirte al carrito de compra" />
+            </StackLayout>
+        </Frame>
 
-		</Frame>
-		<Button x:Name="btnRegresarHome" Text="Regresar" Clicked="OnBtnRegresarHome" />
+        <Button x:Name="btnRegresarHome" Text="Regresar" Clicked="OnBtnRegresarHome" BackgroundColor="#68585D"/>
     </StackLayout>
 
 </ContentPage>

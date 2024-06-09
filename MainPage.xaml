@@ -39,7 +39,7 @@
                 
     </ContentPage.Resources>
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#78A64B">
         <Frame BorderColor="Orange"
                CornerRadius="10"
                HasShadow="True"

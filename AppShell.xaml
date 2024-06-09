@@ -8,7 +8,7 @@
     Title="MJSCJR_TacoslaEnredadaInterfaz">
 
     <ShellContent
-        Title="Home"
+        Title="Tacos la Enredada"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
