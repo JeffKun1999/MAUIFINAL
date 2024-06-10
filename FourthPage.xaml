@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MJSCJR_TacoslaEnredadaInterfaz.FourthPage"
+             Title="FourthPage">
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#68585D"/>
+            <Setter Property="BorderColor" Value="#78A64B"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="15"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0, 4" />
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="#182C61"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#78A64B"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout BackgroundColor="#78A64B">
+        <Frame BorderColor="Orange"
+               CornerRadius="10"
+               HasShadow="True"
+               BackgroundColor="#68585D">
+            <StackLayout>
+                <Image Source="logo.jpg"
+                       WidthRequest="139"
+                       HeightRequest="149"/>
+                <Label Text="¡Gracias por tu compra!" FontSize="26" TextColor="White"/>
+                <Label Text="Tu pedido ha sido recibido y está en proceso." FontSize="20" TextColor="White"/>
+                <Label Text="MUCHAS GRACIAS POR PREFERIRNOS ESPERAMOS VERTE PRONTO" TextColor="White"/>
+                <Label Text="Tacos la Enredada dice hasta pronto" TextColor="White"/>
+                <Image Source="gracias.jpg"
+                       WidthRequest="280"
+                       HeightRequest="200"/>
+                <Button x:Name="btnRegresarHome" Text="Volver a comprar" Clicked="OnBtnRegresarHome"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

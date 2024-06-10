@@ -8,12 +8,12 @@ public partial class ThirdPage : ContentPage
     public ThirdPage()
     {
         InitializeComponent();
-  
-
-}
 
 
-private async void OnbtnComprar(object sender, EventArgs e)
+    }
+
+
+    private async void OnbtnComprar(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new AllNoteRegistro());
         var nuevaNota = new Note
@@ -30,10 +30,14 @@ private async void OnbtnComprar(object sender, EventArgs e)
         NoteService.SaveNotes(notas);
 
         // Navegar a la página AllNoteRegistro
-        
+
     }
     private async void OnBtnRegresarSP(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new SecondPage());
+    }
+    private async void OnBtnTerminarCompra(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FourthPage());
     }
 }
