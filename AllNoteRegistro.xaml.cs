@@ -1,27 +1,36 @@
 using System.Collections.ObjectModel;
 
-namespace MJSCJR_TacoslaEnredadaInterfaz;
-
-public partial class AllNoteRegistro : ContentPage
+namespace MJSCJR_TacoslaEnredadaInterfaz
 {
-	
-
-     public ObservableCollection<Note> Notes { get; set; }
-
-    public AllNoteRegistro()
+    public partial class AllNoteRegistro : ContentPage
     {
-        InitializeComponent();
-        Notes = new ObservableCollection<Note>(NoteService.LoadNotes());
-        BindingContext = this;
-    }
+        public ObservableCollection<Note> Notes { get; set; }
 
-    private async void Add_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new MainPage());
-    }
+        public AllNoteRegistro()
+        {
+            InitializeComponent();
+            Notes = new ObservableCollection<Note>(NoteService.LoadNotes());
+            BindingContext = this;
+        }
 
-    private void notesCollection_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        // Implementar lógica para manejar la selección de notas
+        private async void Add_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        private void notesCollection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Implementar lógica para manejar la selección de notas
+        }
+
+        private async void OnbtnRegresar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ThirdPage());
+        }
+
+        private async void OnBtnTerminarCompra(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FourthPage());
+        }
     }
 }

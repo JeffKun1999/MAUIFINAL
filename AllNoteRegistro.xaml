@@ -3,26 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MJSCJR_TacoslaEnredadaInterfaz.AllNoteRegistro"
              Title="Registro de pedidos">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#78A64B"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}" />
     </ContentPage.ToolbarItems>
 
-    <CollectionView x:Name="notesCollection" 
-                    ItemsSource="{Binding Notes}"
-                    BackgroundColor="#68585D"
-                    SelectionMode="Single"
-                    SelectionChanged="notesCollection_SelectionChanged"
-                    >
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
-        </CollectionView.ItemsLayout>
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout Margin="20" >
-                    <Label Text="{Binding Text}" FontSize="22"/>
-                    <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <StackLayout>
+        <ScrollView>
+            <CollectionView x:Name="notesCollection" 
+                            ItemsSource="{Binding Notes}"
+                            BackgroundColor="#68585D"
+                            SelectionMode="Single"
+                            SelectionChanged="notesCollection_SelectionChanged">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="20">
+                            <Label Text="{Binding Text}" FontSize="22"/>
+                            <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#68585D">
+            <Button x:Name="btnTerminarCompra" Text="Terminar Compra" Clicked="OnBtnTerminarCompra"/>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
+

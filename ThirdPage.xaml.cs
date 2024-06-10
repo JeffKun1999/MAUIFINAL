@@ -36,8 +36,5 @@ public partial class ThirdPage : ContentPage
     {
         await Navigation.PushAsync(new SecondPage());
     }
-    private async void OnBtnTerminarCompra(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new FourthPage());
-    }
+    
 }
