@@ -81,16 +81,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AllNoteRegistro.xaml">
+	  <MauiXaml Update="Views\AllNoteRegistro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FourthPage.xaml">
+	  <MauiXaml Update="Views\FourthPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SecondPage.xaml">
+	  <MauiXaml Update="Views\SecondPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ThirdPage.xaml">
+	  <MauiXaml Update="Views\ThirdPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

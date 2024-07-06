@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MJSCJR_TacoslaEnredadaInterfaz
+namespace MJSCJR_TacoslaEnredadaInterfaz.Models
 {
     public class Note
     {

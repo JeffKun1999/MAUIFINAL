@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using MJSCJR_TacoslaEnredadaInterfaz.Models;
 
 namespace MJSCJR_TacoslaEnredadaInterfaz
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace MJSCJR_TacoslaEnredadaInterfaz
+namespace MJSCJR_TacoslaEnredadaInterfaz.Models
 {
     public static class MauiProgram
     {
@@ -16,7 +16,7 @@ namespace MJSCJR_TacoslaEnredadaInterfaz
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

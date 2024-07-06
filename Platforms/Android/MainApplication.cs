@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Runtime;
+using MJSCJR_TacoslaEnredadaInterfaz.Models;
 
 namespace MJSCJR_TacoslaEnredadaInterfaz
 {

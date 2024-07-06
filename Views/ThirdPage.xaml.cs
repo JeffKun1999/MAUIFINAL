@@ -1,3 +1,4 @@
+using MJSCJR_TacoslaEnredadaInterfaz.Models;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace MJSCJR_TacoslaEnredadaInterfaz;
