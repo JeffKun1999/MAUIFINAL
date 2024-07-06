@@ -31,7 +31,22 @@ namespace MJSCJR_TacoslaEnredadaInterfaz
 
         private async void OnBtnTerminarCompra(object sender, EventArgs e)
         {
+
+            var notes = NoteService.LoadNotes();
+            var newNote = new Note
+            {
+                IDRegistro = NoteService.GetNextIDRegistro(),
+                Text = $"Tu orden se ha generado exitosamente a la hora: {DateTime.Now} con el número de orden: 00 {NoteService.GetNextIDRegistro()}", // Asigna el texto adecuado
+                Date = DateTime.Now
+            };
+            notes.Add(newNote);
+            NoteService.SaveNotes(notes);
+
+            // Actualiza la colección enlazada si es necesario
             await Navigation.PushAsync(new FourthPage());
+            notesCollection.ItemsSource = NoteService.LoadNotes();
+
         }
     }
-}
+    }
+

@@ -62,6 +62,16 @@
 	  <None Remove="Resources\Drawable\TacosdeBirria.jpg" />
 	  <None Remove="Resources\Drawable\TacosdeCarne.jpg" />
 	  <None Remove="Resources\Drawable\TacosdePollo.jpg" />
+	  <None Remove="Resources\Images\billicon.png" />
+	  <None Remove="Resources\Images\checkicon.png" />
+	  <None Remove="Resources\Images\homeicon.png" />
+	  <None Remove="Resources\Images\icon_menu.png" />
+	  <None Remove="Resources\Images\loginicon.png" />
+	  <None Remove="Resources\Images\producticon.png" />
+	  <None Remove="Resources\Images\shopcarticon.png" />
+	  <None Remove="Resources\Images\signinicon.png" />
+	  <None Remove="Resources\Images\statusicon.png" />
+	  <None Remove="Resources\Images\tacosicon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -85,6 +95,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FourthPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\OrderStatusPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaginaLogin.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SecondPage.xaml">

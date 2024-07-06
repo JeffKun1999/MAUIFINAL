@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MJSCJR_TacoslaEnredadaInterfaz.OrderStatusPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="#68585D"/>
+            <Setter Property="BorderColor" Value="#78A64B"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="15"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0, 4" />
+        </Style>
+
+        <Style x:Key="headerLabel1" TargetType="Label">
+            <Setter Property="Margin" Value="0, 5" />
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="#182C61"/>
+        </Style>
+
+        <Style TargetType="Image">
+            <Setter Property="FlexLayout.Order" Value="-1"/>
+            <Setter Property="FlexLayout.AlignSelf" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Text" Value="Comprar"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#78A64B"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout BackgroundColor="#78A64B"
+                 >
+        <Frame BorderColor="Orange"
+       CornerRadius="10"
+       HasShadow="True"
+       BackgroundColor="#68585D"
+       >
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <!-- Fila para la imagen -->
+                    <RowDefinition Height="Auto" />
+                    <!-- Fila para el texto -->
+                </Grid.RowDefinitions>
+
+                <!-- Imagen -->
+                <Image Source="logo.png"
+               WidthRequest="280"
+               HeightRequest="200"
+               Aspect="AspectFit"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Grid.Row="0"/>
+
+                <!-- Texto -->
+                <Label Text="Estado del Pedido" 
+               Style="{StaticResource headerLabel1}" 
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               Grid.Row="1"/>
+            </Grid>
+
+        </Frame>
+        <Frame>
+            <StackLayout>
+                <Label Text="Número de Pedido"
+                       Style="{StaticResource headerLabel1}" />
+                <Entry Placeholder="Introduce tu número de pedido"
+                       Keyboard="Numeric"
+                       TextColor="Black"/>
+                <Button Text="Ver Estado"
+                        FontSize="Medium"
+                        TextColor="White"
+                        BackgroundColor="#78A64B"
+                        CornerRadius="20"
+                        Margin="0, 20, 0, 0"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame>
+            <StackLayout>
+                <Label Text="Estado Actual:"
+                       Style="{StaticResource headerLabel1}" />
+                <Label Text="Preparando"
+                       Style="{StaticResource headerLabel1}"
+                       TextColor="White"/>
+                <!-- Puedes añadir más detalles sobre el estado del pedido aquí -->
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    </ContentPage>

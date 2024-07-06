@@ -3,13 +3,67 @@
     x:Class="MJSCJR_TacoslaEnredadaInterfaz.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MJSCJR_TacoslaEnredadaInterfaz"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:views="clr-namespace:MJSCJR_TacoslaEnredadaInterfaz"
+    Shell.FlyoutBehavior="Flyout"
     Title="MJSCJR_TacoslaEnredadaInterfaz">
 
-    <ShellContent
-        Title="Tacos la Enredada"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <FlyoutItem Title="Home" Icon="tacosicon.png">
+        <ShellContent 
+         Title="Tacos la Enredada" 
+         ContentTemplate="{DataTemplate views:MainPage}" 
+         Route="MainPage" />
+    </FlyoutItem>
+
+
+
+
+    <FlyoutItem Title="Second Page" Icon="producticon.png">
+        <ShellContent 
+            Title="Second Page" 
+            ContentTemplate="{DataTemplate views:SecondPage}" 
+            Route="SecondPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Third Page" Icon="shopcarticon.png">
+        <ShellContent 
+            Title="ThirdPage" 
+            ContentTemplate="{DataTemplate views:ThirdPage}" 
+            Route="ThirdPage" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="FourthPage" Icon="checkicon.png">
+        <ShellContent 
+            Title="FourthPage" 
+            ContentTemplate="{DataTemplate views:FourthPage}" 
+            Route="FourthPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="All Notes Page" Icon="billicon.png">
+        <ShellContent 
+            Title="AllNotePage" 
+            ContentTemplate="{DataTemplate views:AllNoteRegistro}" 
+            Route="AllNotesPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Login" Icon="loginicon.png">
+        <ShellContent 
+       Title="Login" 
+       ContentTemplate="{DataTemplate views:PaginaLogin}" 
+       Route="PaginaLogin" />
+    </FlyoutItem>
+    <FlyoutItem Title="Estatus" Icon="statusicon.png">
+        <ShellContent 
+      Title="Estatus" 
+      ContentTemplate="{DataTemplate views:OrderStatusPage}" 
+      Route="OrderStatusPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Registrar" Icon="signinicon.png">
+        <ShellContent 
+      Title="RegistrarUsuario" 
+      ContentTemplate="{DataTemplate views:RegisterPage}" 
+      Route="RegisterPage" />
+    </FlyoutItem>
 
 </Shell>

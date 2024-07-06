@@ -27,5 +27,10 @@ namespace MJSCJR_TacoslaEnredadaInterfaz.Models
             var json = JsonConvert.SerializeObject(notes);
             File.WriteAllText(filePath, json);
         }
+        public static int GetNextIDRegistro()
+        {
+            var notes = LoadNotes();
+            return notes.Any() ? notes.Max(n => n.IDRegistro) + 1 : 1;
+        }
     }
 }
