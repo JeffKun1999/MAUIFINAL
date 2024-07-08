@@ -31,8 +31,8 @@
                 </Grid.RowDefinitions>
 
                 <Image Source="logo.png"
-        WidthRequest="280"
-        HeightRequest="200"
+        WidthRequest="112"
+        HeightRequest="80"
         Aspect="AspectFit"
         VerticalOptions="Center"
         HorizontalOptions="Center"
@@ -54,6 +54,16 @@
                        Style="{StaticResource headerLabel1}" />
                 <Entry Placeholder="Introduce tu nombre"
                        Keyboard="Default"
+                       TextColor="Black"/>
+                <Label Text="Cedula"
+                        Style="{StaticResource headerLabel1}" />
+                <Entry Placeholder="Introduce tu cedula"
+                        Keyboard="Default"
+                        TextColor="Black"/>
+                <Label Text="N°Usuario"
+                        Style="{StaticResource headerLabel1}" />
+                <Entry Placeholder="Introduce tu Numero  de usuario"
+                        Keyboard="Default"
                        TextColor="Black"/>
                 <Label Text="Correo Electrónico"
                        Style="{StaticResource headerLabel1}" />
